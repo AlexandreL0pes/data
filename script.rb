@@ -3,9 +3,9 @@ require 'csv'
 filename = "#{Time.now.to_i}.csv"
 
 CSV.open(filename, "a+") do |csv|
-	csv << ["cluster_id", "priority", "product_id"]
+	csv << ["cluster_id", "priority", "product_id", "expires_at"]
         (700 * 1000).times do |i|
-                csv << ["test_cluster_bc", "123", "#{i}_product"]
+                csv << ["test_cluster_bd", "123", "#{i}_product", "1661901693000"]
         end
 
 end
