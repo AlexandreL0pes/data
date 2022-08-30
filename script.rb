@@ -5,7 +5,7 @@ filename = "#{Time.now.to_i}.csv"
 CSV.open(filename, "a+") do |csv|
 	csv << ["cluster_id", "priority", "product_id"]
         (700 * 1000).times do |i|
-                csv << ["test_cluster_ap", "123", "#{i}_product"]
+                csv << ["test_cluster_aq", "123", "#{i}_product"]
         end
 
 end
