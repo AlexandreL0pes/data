@@ -5,8 +5,8 @@ timestamp = Time.now.to_i + 3600 # one hour ahead
 
 CSV.open(filename, "a+") do |csv|
 	csv << ["cluster_id", "priority", "product_id", "expires_at"]
-        (700 * 1000).times do |i|
-                csv << ["test_cluster_bj", "123", "#{i}_product", timestamp.to_s]
+        (100 * 1000).times do |i|
+                csv << ["test_cluster_bk", "123", "#{i}_product", timestamp.to_s]
         end
 
 end
